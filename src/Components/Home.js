@@ -1,9 +1,11 @@
 import React from 'react'
 import Header from './Header'
+import Footer from './Footer'
 export default function Home() {
   return (
-   <div className='p-4'>
-     <Header />
+   <div>
+     <dic><Header /></dic>
+     <div className=''><Footer /></div>
    </div>
   )
 }

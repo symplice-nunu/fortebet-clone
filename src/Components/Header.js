@@ -3,7 +3,7 @@ import fortebet from '../assets/images/fortebet.webp'
 
 export default function Header() {
   return (
-    <div>
+    <div className='pt-4 px-4 bg-[#232427]'>
       <div className='text-[10px] flex justify-between'>
       <div className='text-white flex space-x-2 '>
         <div className='py-1 px-6 border-[1px] border-gray-600'>time: {new Date().toLocaleTimeString()}</div>
@@ -20,8 +20,8 @@ export default function Header() {
       <div className='flex justify-between my-3'>
         <div><img className='h-[50px] mt-[-14px]' src={fortebet} /></div>
         <div className='flex space-x-2'>
-            <div><input className='px-2' type="text" name='username' /></div>
-            <div><input className='px-2' type="password" name='password' /></div>
+            <div><input className='px-2 w-32'  type="text" name='username' /></div>
+            <div><input className='px-2 w-32'  type="password" name='password' /></div>
             <div><input className='px-10 bg-[#fe7c01] text-white' type="button" value="LOGIN" /></div>
         </div>
       </div>

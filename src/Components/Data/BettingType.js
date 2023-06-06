@@ -1,6 +1,8 @@
 
 import { AiOutlineMobile } from 'react-icons/ai'
 import { FaHome } from 'react-icons/fa'
+import airtel from '../../assets/images/airtel.png'
+import mtn from '../../assets/images/mtn.png'
 export const BettingType = [
     {
         ColorT: 'off',
@@ -9,22 +11,22 @@ export const BettingType = [
     },
     {
         ColorT: 'off',
-        BettingIcon: <AiOutlineMobile />,
+        BettingIcon: <AiOutlineMobile className='mt-[2px]' />,
         BettingType: 'MOBILE SITE',
     },
     {
         ColorT: 'on',
-        BettingIcon: <FaHome />,
+        BettingIcon: <FaHome className='mt-[2px]' />,
         BettingType: 'DEPOSIT AT BRANCH',
     },
     {
         ColorT: 'on',
-        BettingIcon: 'icon',
+        BettingIcon: <img className='w-6' src={mtn} />,
         BettingType: 'MTN MOBILE MONEY',
     },
     {
         ColorT: 'on',
-        BettingIcon: 'icon',
+        BettingIcon: <img className='w-6 h-4' src={airtel} />,
         BettingType: 'AIRTEL MONEY',
     },
     {

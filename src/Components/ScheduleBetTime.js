@@ -5,7 +5,7 @@ import { AiOutlineDelete } from 'react-icons/ai'
 import { LeaguesData } from './Data/LeaguesData'
 export default function ScheduleBetTime() {
   return (
-    <div className='w-[265px]'>
+    <div className='w-[233px]'>
         <div className='flex ml-3 mb-3 text-white flex-wrap'>
         {
             ScheduleBetTimeData.map((item) => {

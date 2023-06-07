@@ -28,7 +28,7 @@ export default function RightSidebar() {
         <div className='px-3 bg-[#36393c] mt-2 py-5'>
             <div className='text-white text-[12px] mb-1'>Ticket number</div>
             <div><input type="text"  className='w-full' name="" /></div>
-            <div><input type="button" className='mt-3 bg-[#454647] w-full text-[#b9babb] py-1' value="CHECK TICKET" /></div>
+            <div><input type="button" className='mt-3 bg-[#454647] w-full text-[#b9babb] py-1 cursor-pointer' value="CHECK TICKET" /></div>
         </div>
     </div>
   )

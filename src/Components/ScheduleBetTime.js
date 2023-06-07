@@ -2,6 +2,7 @@ import React from 'react'
 import { ScheduleBetTimeData } from './Data/ScheduleBetTimeData'
 import { TopBetData } from './Data/TopBetData'
 import { AiOutlineDelete } from 'react-icons/ai'
+import { LeaguesData } from './Data/LeaguesData'
 export default function ScheduleBetTime() {
   return (
     <div className='w-[265px]'>
@@ -34,6 +35,21 @@ export default function ScheduleBetTime() {
     <div className='ml-3 w-[210px] text-[12px] font-bold flex justify-between px-3 text-white bg-[#36393c] py-1 my-2'>
         <div>MY SELECTION ( 0 )</div>
         <div className='mt-1 '><AiOutlineDelete /></div>
+    </div>
+    <div className='ml-3 w-[210px]'>
+        {
+           LeaguesData.map((item) => {
+            return (
+                <div className={`text-white flex space-x-2 cursor-pointer justify-between bg-[#36393c] mb-[1px] p-1`}>
+                    <div className='flex'>
+                    <div>{item.LeagueIcon}</div>
+                    <div className='text-[12px] mx-2'>{item.LeagueName}</div>
+                    </div>
+                    <div>{item.LeagueRightIcon}</div>
+                </div>
+            )
+           })
+        }
     </div>
     </div>
   )

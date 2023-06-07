@@ -1,6 +1,6 @@
 import React from 'react'
 import { ScheduleBetTimeData } from './Data/ScheduleBetTimeData'
-
+import { TopBetData } from './Data/TopBetData'
 export default function ScheduleBetTime() {
   return (
     <div className='w-[265px]'>
@@ -15,6 +15,19 @@ export default function ScheduleBetTime() {
                     </div>
                 )
             })
+        }
+    </div>
+    <div className='ml-3 mb-3 text-white'>TOP BETS</div>
+    <div className='ml-3 w-[210px]'>
+        {
+           TopBetData.map((item) => {
+            return (
+                <div className='flex text-white space-x-2 bg-[#36393c] mb-[1px] p-1'>
+                    <div>{item.Flag}</div>
+                    <div className='text-[12px]'>{item.Name}</div>
+                </div>
+            )
+           })
         }
     </div>
     </div>

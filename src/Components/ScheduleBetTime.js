@@ -1,6 +1,7 @@
 import React from 'react'
 import { ScheduleBetTimeData } from './Data/ScheduleBetTimeData'
 import { TopBetData } from './Data/TopBetData'
+import { AiOutlineDelete } from 'react-icons/ai'
 export default function ScheduleBetTime() {
   return (
     <div className='w-[265px]'>
@@ -17,18 +18,22 @@ export default function ScheduleBetTime() {
             })
         }
     </div>
-    <div className='ml-3 mb-3 text-white'>TOP BETS</div>
+    <div className='ml-6 mb-3 text-white text-[13px]'>TOP BETS</div>
     <div className='ml-3 w-[210px]'>
         {
            TopBetData.map((item) => {
             return (
-                <div className='flex text-white space-x-2 bg-[#36393c] mb-[1px] p-1'>
+                <div className={`${item.Name === 'Champions League' ? 'text-[#ff8401]' : 'text-white'} flex space-x-2 cursor-pointer bg-[#36393c] mb-[1px] p-1`}>
                     <div>{item.Flag}</div>
                     <div className='text-[12px]'>{item.Name}</div>
                 </div>
             )
            })
         }
+    </div>
+    <div className='ml-3 w-[210px] text-[12px] font-bold flex justify-between px-3 text-white bg-[#36393c] py-1 my-2'>
+        <div>MY SELECTION ( 0 )</div>
+        <div className='mt-1 '><AiOutlineDelete /></div>
     </div>
     </div>
   )
